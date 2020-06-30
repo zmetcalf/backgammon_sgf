@@ -16,8 +16,11 @@ def gnubg_file():
     return data
 
 def test_split_matches(gnubg_file):
-    assert len(Parser.parse(gnubg_file, False)) == 2
+    assert len(Parser.parse(gnubg_file)) == 2
 
-def test_deserialize_keys(gnubg_file):
-    # assert Parser.parse(gnubg_file, False)
+def test_game_data_setup(gnubg_file):
+    # assert Parser.parse(gnubg_file)
+    pass
+
+def test_move_setup(gnubg_file):
     pass
